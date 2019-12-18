@@ -17,9 +17,9 @@ module.exports= function(app)
     {
         res.render('contact');
     });
-    app.get('/reg_form/login',function(req,res)
+    app.get('/reg_form/Login',function(req,res)
     {
-        res.render('reg_form/login');
+        res.render('reg_form/Login');
         
     });
     app.post('/reg_form/login',function(req,res)
