@@ -20,9 +20,9 @@ module.exports= function(app)
     {
         res.render('Doctree_contact')
     });
-    app.get('/registration/registration',(req,res)=>
+    app.get('/Registration/registration',(req,res)=>
     {
-        res.render('registration/registration')
+        res.render('Registration/registration')
     });
 
 };
