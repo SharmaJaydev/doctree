@@ -1,12 +1,12 @@
 module.exports= function(app)
 {
-    app.get('/doctree_index',(req,res)=>
+    app.get('/Doctree_index',(req,res)=>
     {
-        res.render('doctree_index');
+        res.render('Doctree_index');
     });
-    app.post('/doctree_index',(req,res)=>
+    app.post('/Doctree_index',(req,res)=>
     {
-        res.render('doctree_index');
+        res.render('Doctree_index');
     });
     app.get('/doctree_about-us',(req,res)=>
     {
