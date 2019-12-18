@@ -1,0 +1,30 @@
+.parent_all
+{
+    top:0px;
+    margin-left:140px;
+}
+@media(max-width:480px)
+{
+    .parent_all
+    {
+        margin-left:20px;
+    }
+}
+.button_form
+{
+    background-color:white;
+    color:black;
+}
+#img_logo
+{
+    margin-top:20px;
+    margin-left:185px;
+}
+@media(max-width:480px)
+{
+    #img_logo
+    {
+        margin-top:20px;
+        margin-left:80px;
+    }
+}

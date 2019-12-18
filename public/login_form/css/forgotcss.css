@@ -1,0 +1,12 @@
+ .forgot
+        {
+            margin-top:0px;padding-left:192px;
+        }
+        @media (max-width:480px)
+        {
+            .forgot
+            { 
+                padding-left:145px;
+
+            }
+        }

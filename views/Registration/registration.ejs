@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>
+    <title>Document</title>
+  <link rel="stylesheet" href="/login_form/css/registration.css"> 
+</head>
+<body>
+     <img id="img_logo"src="/login_form/images/logo.png">   
+    <form method="POST" class="register-form  id="login-form" action="/doctree_index">
+                <div class="form-row ">
+                        <div class="col-auto my-1 parent_all">
+                           
+                          <label class="mr-sm-2" for="inlineFormCustomSelect"><h4>Medical Registration</h4></label>
+                          <h6>Specilization</h6>
+                          <select class="custom-select mr-sm-2 seeAnotherField" id="inlineFormCustomSelect" >
+                            <option value="no">Allopathic</option>
+                            <option value="yes">Ayurvedic</option>
+                            <option value="yes">Dental</option>
+                            <option value="yes">homyopethic</option>
+                          </select>
+                        <div class="form-group otherField">
+                              <label for="inputAddress" style="font-size: 14px;color:gray">Registration Number</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="Ex--12345">
+                            </div>
+                            <div class="form-group otherFieldDiv">
+                              <label for="inputAddress" style="font-size: 14px;color:gray">City</label>
+                              <input type="text" class="form-control" id="inputAddress" placeholder="City">
+                            </div>
+                            <div class="form-group otherField">
+                         <label for="inputAddress" style="font-size: 14px;color:gray">State</label>
+                          <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+                            <option value="1">Andhra Pradesh medical council</option>
+                            <option value="2">Arunachal Pradesh medical council</option>
+                            <option value="3">Assam medical council</option>
+                            <option value="4">Bihar medical council</option>
+                            <option value="5">Goa medical council</option>
+                            <option value="6">Gujarat medical council</option>
+                            <option value="7">Haryana medical council</option>
+                            <option value="8">Himachal Pradesh medical council</option>
+                            <option value="9"> Jharkhand medical council</option>
+                            <option value="10">Karnataka medical council</option>
+                            <option value="11">Kerala medical council</option>
+                            <option value="12">Madhya Pradesh medical council</option>
+                            <option value="13">Maharashtra medical council</option>
+                            <option value="15">Manipur medical council</option>
+                            <option value="16">Meghalaya medical council</option>
+                            <option value="17">Mizoram medical council</option>
+                            <option value="18">Nagaland medical council</option>
+                            <option value="19">Odisha medical council</option>
+                            <option value="20">Punjab medical council</option>
+                            <option value="21">Rajasthan medical council</option>
+                            <option value="22">Sikkim medical council</option>
+                            <option value="23">Tamil Nadu medical council</option>  
+                            <option value="24">Telangana medical council</option>  
+                            <option value="25">Tripura medical council</option>  
+                            <option value="26">Uttar Pradesh medical council</option>  
+                            <option value="27"> Uttarakhand medical council</option>  
+                            <option value="28">West Bengal medical council</option>  
+                            <option value="29"> Medical council of india</option>                              
+                          </select>
+                            </div>
+                          <div class="form-group otherField"> <!-- Date input -->
+                            <label class="control-label" for="date">Date</label>
+                            <input class="form-control" id="date" name="date" placeholder="MM/DD/YYY" type="text"/>
+                          </div>
+                          <div class="form-group">
+                                <label for="inputAddress" style="font-size: 14px;color:gray">Mobile Number</label>
+                                <input type="text" class="form-control" id="inputAddress" placeholder="Mo.No"> 
+                          </div>
+                          <hr>
+                          <div class="button_form">
+                              <input type="submit" name="signin" id="signin" class="form-submit"  value="Log in"/>
+                          </div>
+                            </div>
+                      </div>
+              </form>
+              
+</body>
+</html>
+<script>
+        $(document).ready(function(){
+          var date_input=$('input[name="date"]'); //our date input has the name "date"
+          var container=$('.bootstrap-iso form').length>0 ? $('.bootstrap-iso form').parent() : "body";
+          var options={
+            format: 'mm/dd/yyyy',
+            container: container,
+            todayHighlight: true,
+            autoclose: true,
+          };
+          date_input.datepicker(options);
+        });
+  $(".seeAnotherField").change(function() {
+  if ($(this).val() == "yes") {
+    $('.otherFieldDiv').show();
+    $('.otherField').hide();
+   
+  } else {
+    $('.otherFieldDiv').hide();
+    $('.otherField').show();
+  }
+});
+$(".seeAnotherField").trigger("change");
+     </script>

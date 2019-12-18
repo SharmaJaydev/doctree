@@ -1,0 +1,14 @@
+#patients
+		{
+			margin-left:18px;
+		}
+		@media (max-width:480px)
+		{
+			#patients
+			{
+				margin-top:5px;
+				margin-left:0px;
+				
+			}
+
+		}
