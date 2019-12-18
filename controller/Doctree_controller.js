@@ -32,7 +32,7 @@ module.exports= function(app)
     });
     app.post('/reg_form/Sign_Up',function(req,res)
     {
-        res.render('reg_form/Sign_up')
+        res.render('reg_form/Sign_Up')
     });
     app.get('/reg_form/forgot',function(req,res)
     {
