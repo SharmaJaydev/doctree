@@ -8,9 +8,9 @@ module.exports= function(app)
     {
         res.render('Doctree_index');
     });
-    app.get('/doctree_about-us',(req,res)=>
+    app.get('/Doctree_about-us',(req,res)=>
     {
-        res.render('doctree_about-us');
+        res.render('Doctree_about-us');
     });
     app.get('/price',(req,res)=>
     {
