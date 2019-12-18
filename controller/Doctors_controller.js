@@ -24,5 +24,9 @@ module.exports= function(app)
     {
         res.render('Registration/registration')
     });
+    app.post('/reg_form/login',function(req,res)
+    {
+        res.render('reg_form/login');
+    });
 
 };
