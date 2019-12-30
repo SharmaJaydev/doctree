@@ -1,13 +1,14 @@
+var authenticate = require('../authenticate');
 module.exports= function(app)
 {
 
-    app.get('/',function(req,res)
+    app.get('/Doctree_index',authenticate.verifyUser,(req,res)=>
 {
-    res.render('index');
+    res.render('Doctree_index');
 });
-    app.get('/index',function(req,res)
+    app.get('/Doctree_about-us',function(req,res)
     {
-        res.render('index');
+        res.render('Doctree_about-us');
     });
     app.get('/about_us',function(req,res)
     {
